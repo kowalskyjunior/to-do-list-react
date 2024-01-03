@@ -1,11 +1,11 @@
-:root{
+:root {
   --roxo: #352356;
   --dourado: #ffaa00;
   --branco: #eeeeee;
 }
 
-.container{
-  width: 100%;
+.container {
+  height: 100vh;
   max-width: 600px;
   margin: 0 auto;
   padding: 3em 5%;
@@ -14,26 +14,36 @@
   justify-content: center;
   flex-direction: column;
   align-content: center;
+
 }
 
-.title{
+.sub-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(248, 177, 149, 1);
+  background-image: linear-gradient(185deg, rgba(248, 177, 149, 1) 0%, rgba(53, 92, 125, 1) 100%);
+  border-radius: .5rem;
+  padding: 3em;
+}
+
+.title {
   padding: .5rem;
   font-size: 30px;
 }
 
-input[type='text']{
+input[type='text'] {
   width: 100%;
   height: 3rem;
   padding-left: .5em;
   font-size: 15px;
   border-radius: .5rem;
-  background-color: #d4c8ec69;
+  background-color: #ccc;
   outline: none;
   font-size: 25px;
-  color: #fff;
+  color: var(--roxo);
 }
 
-input[type='submit']{
+input[type='submit'] {
   width: 100%;
   height: 3rem;
   margin-top: 1rem;
@@ -46,11 +56,11 @@ input[type='submit']{
   color: #fff;
 }
 
-input[type='submit']:hover{
+input[type='submit']:hover {
   background-color: #0f0325;
 }
 
-.task-name{
+.task-name {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -59,12 +69,12 @@ input[type='submit']:hover{
   background-color: var(--dourado);
 }
 
-.task-area{
+.task-area {
   width: 100%;
   max-width: 600px;
 }
 
-.task-wraper{
+.task-wraper {
   display: flex;
   width: 100%;
   align-items: center;
@@ -78,11 +88,11 @@ input[type='submit']:hover{
   border-radius: .5rem;
 }
 
-.task-wraper:hover{
+.task-wraper:hover {
   transform: scale(1.06);
 }
 
-.close-btn{
+.close-btn {
   color: #fff;
   text-align: center;
   vertical-align: middle;
@@ -93,6 +103,18 @@ input[type='submit']:hover{
   transition: 0.5s;
 }
 
-.close-btn:hover{
+.close-btn:hover {
   transform: scale(1.2);
+}
+
+span{
+  padding: 1rem;
+  color: #eeeeee;
+  background-color: #352356cc;
+  margin-top: 1rem;
+  border-radius: .5rem;
+}
+
+a{
+  color: #eeeeee;
 }

@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div className='container'>
+      <div className="sub-container">
       <h2 className='title'>Lista de Tarefas</h2>
 
       <input
@@ -46,8 +47,9 @@ function App() {
         type="submit"
         value={'Adicionar'}
         onClick={handleSubmit} />
-
     <TaskArea tasksArray={tasksArray} setTasksArray={setTasksArray}/>
+      </div>
+      <span className='author-name'>Coded by <a target='blank' href='https://github.com/kowalskyjunior' style={{textDecoration:'none'}}>Kowalsky Júnior</a></span>
     </div>//container
 
   )
