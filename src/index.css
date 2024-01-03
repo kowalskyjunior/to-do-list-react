@@ -1,0 +1,17 @@
+:root{
+  --roxo: #352356;
+  --dourado: #ffaa00;
+  --branco: #eeeeee;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-color: var(--roxo);
+  color: var(--branco);
+}
